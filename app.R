@@ -4,6 +4,8 @@ library(tidyverse)
 source('table.R')
 source('plot.R')
 
+options(shiny.reactlog = TRUE) 
+
 tbl_avengers <- readr::read_csv('avengers.csv')
 
 ui <- navbarPage(
